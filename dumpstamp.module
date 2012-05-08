@@ -1,0 +1,15 @@
+<?php
+
+function dumpstamp_menu() {
+  $items['dumpstamp'] = array(
+    'title' => 'Dump Stamp',
+    'access callback' => TRUE,
+    'page callback' => 'dumpstamp_page',
+  );
+
+  return $items;
+}
+
+function dumpstamp_page() {
+  return "Dumpstamp";
+}
