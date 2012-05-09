@@ -11,5 +11,11 @@ function dumpstamp_menu() {
 }
 
 function dumpstamp_page() {
-  return "Dumpstamp";
+  $message = t('Dumpstamp in a variable.');
+  
+  $page = array(
+    '#markup' => "$message",
+  );
+
+  return $page;
 }
