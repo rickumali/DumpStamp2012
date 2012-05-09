@@ -11,10 +11,10 @@ function dumpstamp_menu() {
 }
 
 function dumpstamp_page() {
-  $message = t('Dumpstamp in a variable.');
+  $message = t('A time stamp: ');
   
   $page = array(
-    '#markup' => "$message",
+    '#markup' => "$message" . date('M d, Y'),
   );
 
   return $page;
