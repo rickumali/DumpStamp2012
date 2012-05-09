@@ -6,16 +6,23 @@ function dumpstamp_menu() {
     'access callback' => TRUE,
     'page callback' => 'dumpstamp_page',
   );
+  $items['dumpstamp/%name'] = array(
+    'page callback' => 'dumpstamp_page',
+    'page arguments' => array(1),
+    'access callback' => TRUE,
+    'title' => 'Dump Stamp with a Name',
+  );
 
   return $items;
 }
 
-function dumpstamp_page() {
-  $message = t('Dumpstamp in a variable.');
+function dumpstamp_page($name = 'Rick') {
+  $message = t('Dumpstamp with name');
   
   $page = array(
-    '#markup' => "$message",
+    '#markup' => "$message: $name",
   );
 
   return $page;
 }
+
