@@ -20,7 +20,7 @@ function dumpstamp_page($name = 'Rick') {
   $message = t('Dumpstamp with name');
   
   $page = array(
-    '#markup' => "$message: $name",
+    '#markup' => "$message" . date('M d, Y'),
   );
 
   return $page;
