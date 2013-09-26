@@ -1,7 +1,8 @@
-This is Rick's example module. It dumps a 'stamp.'
+This is Rick's example module.
 
-This is used as an example module for his "Getting Started with Git"
+It's a Drupal module that produces a small time stamp on a Drupal page.
+
+This is used as the example module for his "Introduction to Git"
 presentation, found at:
 
-http://sn.im/startgit
-
+http://sn.im/git-talk-2013
